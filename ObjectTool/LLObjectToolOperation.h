@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+/*!
+	\brief
+	A simple concurrent operation running an `NSTask` given a launch path and some arguments.
+	Note that in order to keep things simple, the standard error is ignored (it will be logged to the console).
+	A more robust approach would read the standard error and report it as part of the completion provider.
+ */
 @interface LLObjectToolOperation : NSOperation
 
 - (id)initWithToolLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments;
