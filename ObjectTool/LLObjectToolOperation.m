@@ -95,11 +95,11 @@ static NSString * const _LLObjectToolOperationIsFinishedKey = @"isFinished";
 
 - (void)cancel
 {
+	[super cancel];
+	
 	[[self controlQueue] addOperationWithBlock:^ {
 		[[self task] terminate];
 	}];
-	
-	[super cancel];
 }
 
 - (void)_finish
