@@ -8,6 +8,8 @@
 
 #import "LLObjectToolOperation.h"
 
+#import "ReactiveCocoa/ReactiveCocoa.h"
+
 #import "LLObjectTool-Constants.h"
 
 @interface LLObjectToolOperation (/* Parameters */)
